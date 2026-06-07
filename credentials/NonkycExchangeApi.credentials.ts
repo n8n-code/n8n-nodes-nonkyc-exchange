@@ -55,7 +55,7 @@ export class NonkycExchangeApi implements ICredentialType {
 
 	test: ICredentialTestRequest = {
 			"request": {
-				"baseURL": "={{ $credentials.baseUrl }}",
+				"baseURL": "={{ $credentials.url }}",
 				"url": "/info",
 				"method": "GET"
 			}
