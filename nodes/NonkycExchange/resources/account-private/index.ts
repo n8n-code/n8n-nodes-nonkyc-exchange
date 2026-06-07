@@ -169,6 +169,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"GET Balances"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"GET Balances"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"GET Balances"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /getdepositaddress/{ticker}",
 			"name": "operation",
 			"type": "notice",
@@ -194,6 +269,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 			"description": "Ticker for currency,  like 'BTC'",
 			"default": "",
 			"type": "string",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"GET Getdepositaddress"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"GET Getdepositaddress"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"GET Getdepositaddress"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -420,6 +570,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"POST Createorder"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"POST Createorder"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"POST Createorder"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "POST /cancelorder",
 			"name": "operation",
 			"type": "notice",
@@ -451,6 +676,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Cancel Order"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Cancel Order"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Cancel Order"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -520,6 +820,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 					"propertyInDotNotation": false,
 					"type": "body",
 					"value": "={{ $value }}"
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"POST Cancelallorders"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"POST Cancelallorders"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"POST Cancelallorders"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -656,6 +1031,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Create Withdrawal"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Create Withdrawal"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Create Withdrawal"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /getdeposits",
 			"name": "operation",
 			"type": "notice",
@@ -761,6 +1211,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 					"property": "since",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Deposits"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Deposits"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Deposits"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
@@ -894,6 +1419,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Withdrawals"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Withdrawals"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Withdrawals"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /getorder/{orderId}",
 			"name": "operation",
 			"type": "notice",
@@ -919,6 +1519,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 			"description": "NonKYC orderId or userProvidedId",
 			"default": "",
 			"type": "string",
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Order"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Order"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Order"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
+				}
+			},
 			"displayOptions": {
 				"show": {
 					"resource": [
@@ -1075,6 +1750,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Orders"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Orders"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"Get Orders"
+					]
+				}
+			}
+		},
+		{
 			"displayName": "GET /account/trades",
 			"name": "operation",
 			"type": "notice",
@@ -1180,6 +1930,81 @@ export const accountPrivateDescription: INodeProperties[] = [
 					"property": "since",
 					"value": "={{ $value }}",
 					"propertyInDotNotation": false
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"GET Account Trades"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API KEY (Header)",
+			"name": "security_apikey",
+			"type": "string",
+			"default": "",
+			"description": "An API key is a code that is generated for your account",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-KEY": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"GET Account Trades"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "Api Key",
+			"name": "security_nonce",
+			"type": "string",
+			"default": "",
+			"description": "API key for nonce (header: apiKey)",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"apiKey": "={{ $value }}"
+					}
+				}
+			},
+			"displayOptions": {
+				"show": {
+					"resource": [
+						"Account Private"
+					],
+					"operation": [
+						"GET Account Trades"
+					]
+				}
+			}
+		},
+		{
+			"displayName": "X API SIGN (Header)",
+			"name": "security_signature",
+			"type": "string",
+			"default": "",
+			"description": "Sha256 signature of apiKey+request_url+request_body(post requests)+nonce",
+			"required": false,
+			"routing": {
+				"request": {
+					"headers": {
+						"X-API-SIGN": "={{ $value }}"
+					}
 				}
 			},
 			"displayOptions": {
