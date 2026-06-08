@@ -9,7 +9,7 @@ export class NonkycExchange implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'nonkyc-exchange',
 		name: 'N8nDevNonkycExchange',
-		icon: { light: 'file:./nonkyc-exchange.svg', dark: 'file:./nonkyc-exchange.dark.svg' },
+		icon: { light: 'file:./nonkyc-exchange.png', dark: 'file:./nonkyc-exchange.dark.png' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',

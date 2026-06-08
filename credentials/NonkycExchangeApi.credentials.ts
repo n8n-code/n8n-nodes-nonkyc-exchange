@@ -10,7 +10,7 @@ export class NonkycExchangeApi implements ICredentialType {
 
 	displayName = 'nonkyc-exchange API';
 
-	icon: Icon = { light: 'file:../nodes/NonkycExchange/nonkyc-exchange.svg', dark: 'file:../nodes/NonkycExchange/nonkyc-exchange.dark.svg' };
+	icon: Icon = { light: 'file:../nodes/NonkycExchange/nonkyc-exchange.png', dark: 'file:../nodes/NonkycExchange/nonkyc-exchange.dark.png' };
 
 	documentationUrl = '';
 
