@@ -1,5 +1,7 @@
 # @n8n-dev/n8n-nodes-nonkyc-exchange
 
+![nonkyc-exchange Banner](banner.svg)
+
 [![npm version](https://img.shields.io/npm/v/@n8n-dev/n8n-nodes-nonkyc-exchange.svg)](https://www.npmjs.com/package/@n8n-dev/n8n-nodes-nonkyc-exchange)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
