@@ -116,7 +116,7 @@ export const marketsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "Market id example '61d316e154a758877d2f689c'",
@@ -187,7 +187,7 @@ export const marketsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Market Id",
+			"displayName": "Market ID",
 			"name": "marketId",
 			"description": "the market id",
 			"default": "",

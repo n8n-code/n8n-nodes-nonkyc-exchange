@@ -53,13 +53,70 @@ That's it. No configuration files. No code. It just works.
 
 ## Resources
 
-| Resource | Operations |
-|----------|------------|
-| Assets | GET List assets, GET Get an asset info |
-| Markets | GET List markets, GET Get a market info, GET Get a Market orderbook, GET GET Market Candles, GET List Market trades |
-| Pools | GET List pools, GET Get a pool info, GET List pool trades |
-| Account Private | GET Get Balance, GET Get deposit address, POST Create an order, POST Cancel an order, POST Cancel all open orders, POST Make a withdrawal, GET List account deposits, GET List account withdrawals, GET Get order info, GET List account orders, GET List account trades |
-| Supplementary Endpoints | GET Get exchange Info, GET Get Server Time, GET CMC summary information for all markets, GET GET Cmcassets, GET GET Cmctickers, GET GET Cmcorderbook, GET GET Cmctrades, GET GET Markets, GET Trades, GET Get an Orderbook Snapshot, GET GET Pairs, GET GET Ticker, GET GET Tickers, GET Get Orderbook info |
+<details>
+<summary><b>Assets</b> (2 operations)</summary>
+
+- Get List assets
+- Get an asset info
+
+</details>
+
+<details>
+<summary><b>Markets</b> (5 operations)</summary>
+
+- Get List markets
+- Get a market info
+- Get a Market orderbook
+- Get Market Candles
+- Get List Market trades
+
+</details>
+
+<details>
+<summary><b>Pools</b> (3 operations)</summary>
+
+- Get List pools
+- Get a pool info
+- Get List pool trades
+
+</details>
+
+<details>
+<summary><b>Account Private</b> (11 operations)</summary>
+
+- Get Balance
+- Get deposit address
+- Post Create an order
+- Post Cancel an order
+- Post Cancel all open orders
+- Post Make a withdrawal
+- Get List account deposits
+- Get List account withdrawals
+- Get order info
+- Get List account orders
+- Get List account trades
+
+</details>
+
+<details>
+<summary><b>Supplementary Endpoints</b> (14 operations)</summary>
+
+- Get exchange Info
+- Get Server Time
+- Get CMC summary information for all markets
+- Get Cmcassets
+- Get Cmctickers
+- Get Cmcorderbook
+- Get Cmctrades
+- Get Markets
+- Get Trades
+- Get an Orderbook Snapshot
+- Get Pairs
+- Get Ticker
+- Get Tickers
+- Get Orderbook info
+
+</details>
 
 ---
 

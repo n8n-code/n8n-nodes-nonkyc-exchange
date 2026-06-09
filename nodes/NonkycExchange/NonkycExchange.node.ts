@@ -7,14 +7,14 @@ import { supplementaryEndpointsDescription } from './resources/supplementary-end
 
 export class NonkycExchange implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'nonkyc-exchange',
+		displayName: 'Nonkyc Exchange',
 		name: 'N8nDevNonkycExchange',
 		icon: { light: 'file:./nonkyc-exchange.png', dark: 'file:./nonkyc-exchange.dark.png' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'NonKYC privacy-focused cryptocurrency exchange for trading digital assets without identity verification requirements',
-		defaults: { name: 'nonkyc-exchange' },
+		description: 'NonKYC privacy exchange for trading crypto without identity verification.',
+		defaults: { name: 'Nonkyc Exchange' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],

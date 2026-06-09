@@ -194,7 +194,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",
@@ -306,7 +306,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",
@@ -375,7 +375,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "User Provided Id",
+			"displayName": "User Provided ID",
 			"name": "userProvidedId",
 			"type": "string",
 			"default": "",
@@ -595,7 +595,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",
@@ -665,7 +665,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 		},
 		{
 			"required": true,
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"type": "string",
 			"default": "",
@@ -715,7 +715,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",
@@ -859,7 +859,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",
@@ -1056,7 +1056,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",
@@ -1250,7 +1250,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",
@@ -1444,7 +1444,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",
@@ -1513,7 +1513,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Order Id",
+			"displayName": "Order ID",
 			"name": "orderId",
 			"required": true,
 			"description": "NonKYC orderId or userProvidedId",
@@ -1556,7 +1556,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",
@@ -1775,7 +1775,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",
@@ -1969,7 +1969,7 @@ export const accountPrivateDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Api Key",
+			"displayName": "API Key",
 			"name": "security_nonce",
 			"type": "string",
 			"default": "",

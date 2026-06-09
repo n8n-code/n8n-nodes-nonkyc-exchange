@@ -1,7 +1,7 @@
 {
   "name": "@n8n-dev/n8n-nodes-nonkyc-exchange",
-  "version": "1.0.7",
-  "description": "NonKYC privacy-focused cryptocurrency exchange for trading digital assets without identity verification requirements",
+  "version": "1.0.8",
+  "description": "NonKYC privacy exchange for trading crypto without identity verification.",
   "license": "MIT",
   "homepage": "https://n8n-code.github.io/n8n-dev/#/n8n-nodes-nonkyc-exchange",
   "keywords": [
@@ -11,7 +11,7 @@
     "n8n-community-node-package",
     "openapi",
     "swagger",
-    "api",
+    "API",
     "automation",
     "workflow",
     "nonkyc-exchange"

@@ -8,7 +8,7 @@ import type {
 export class NonkycExchangeApi implements ICredentialType {
 	name = 'N8nDevNonkycExchangeApi';
 
-	displayName = 'nonkyc-exchange API';
+	displayName = 'Nonkyc Exchange API';
 
 	icon: Icon = { light: 'file:../nodes/NonkycExchange/nonkyc-exchange.png', dark: 'file:../nodes/NonkycExchange/nonkyc-exchange.dark.png' };
 
@@ -22,7 +22,7 @@ export class NonkycExchangeApi implements ICredentialType {
 			default: '',
 			required: true,
 			placeholder: 'https://api.example.com',
-			description: 'The base URL of your nonkyc-exchange API server',
+			description: 'The base URL of your Nonkyc Exchange API server',
 		},
 		{
 			displayName: 'API Key',

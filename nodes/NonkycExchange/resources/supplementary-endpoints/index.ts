@@ -608,7 +608,7 @@ export const supplementaryEndpointsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Ticker Id",
+			"displayName": "Ticker ID",
 			"name": "ticker_id",
 			"required": true,
 			"description": "Can be either formatted as BTC_USDT or BTC/USDT",

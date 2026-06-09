@@ -92,7 +92,7 @@ export const poolsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Id",
+			"displayName": "ID",
 			"name": "id",
 			"required": true,
 			"description": "Pool id like '61d316e154a758877d2f689c'",
@@ -163,7 +163,7 @@ export const poolsDescription: INodeProperties[] = [
 			}
 		},
 		{
-			"displayName": "Ticker Id",
+			"displayName": "Ticker ID",
 			"name": "ticker_id",
 			"required": true,
 			"description": "Can be either formatted as BTC_USDT or BTC/USDT",
