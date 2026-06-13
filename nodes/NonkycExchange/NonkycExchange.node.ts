@@ -6,32 +6,32 @@ import { accountPrivateDescription } from './resources/account-private';
 import { supplementaryEndpointsDescription } from './resources/supplementary-endpoints';
 
 export class NonkycExchange implements INodeType {
-	description: INodeTypeDescription = {
-		displayName: 'Nonkyc Exchange',
-		name: 'N8nDevNonkycExchange',
-		icon: { light: 'file:./nonkyc-exchange.png', dark: 'file:./nonkyc-exchange.dark.png' },
-		group: ['input'],
-		version: 1,
-		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'NonKYC privacy exchange for trading crypto without identity verification.',
-		defaults: { name: 'Nonkyc Exchange' },
-		usableAsTool: true,
-		inputs: [NodeConnectionTypes.Main],
-		outputs: [NodeConnectionTypes.Main],
-		credentials: [
-			{
-				name: 'N8nDevNonkycExchangeApi',
-				required: true,
-			},
-		],
-		requestDefaults: {
-			baseURL: '={{\$credentials.url}}',
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-		},
-		properties: [
+        description: INodeTypeDescription = {
+                displayName: 'Nonkyc Exchange',
+                name: 'N8nDevNonkycExchange',
+                icon: { light: 'file:./nonkyc-exchange.png', dark: 'file:./nonkyc-exchange.dark.png' },
+                group: ['input'],
+                version: 1,
+                subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
+                description: 'NonKYC privacy exchange for trading crypto without identity verification.',
+                defaults: { name: 'Nonkyc Exchange' },
+                usableAsTool: true,
+                inputs: [NodeConnectionTypes.Main],
+                outputs: [NodeConnectionTypes.Main],
+                credentials: [
+                        {
+                                name: 'N8nDevNonkycExchangeApi',
+                                required: true,
+                        },
+                ],
+                requestDefaults: {
+                        baseURL: '={{\$credentials.url}}',
+                        headers: {
+                                Accept: 'application/json',
+                                'Content-Type': 'application/json',
+                        },
+                },
+                properties: [
 		{
 			"displayName": "Resource",
 			"name": "resource",
@@ -71,6 +71,6 @@ export class NonkycExchange implements INodeType {
 		...poolsDescription,
 		...accountPrivateDescription,
 		...supplementaryEndpointsDescription
-		],
-	};
+                ],
+        };
 }
